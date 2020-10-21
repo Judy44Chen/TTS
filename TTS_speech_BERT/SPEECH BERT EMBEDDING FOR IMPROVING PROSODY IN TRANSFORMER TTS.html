@@ -2,7 +2,7 @@
 <!-- saved from url=(0041)https://yaden2018.github.io/multispeaker/ -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
-    <title>SPEECH BERT EMBEDDING FOR IMPROVING PROSODY IN TRANSFORMER TTS
+    <title>Forward-Backward Decoding for Regularizing End-to-End TTS
 </title>
     <link rel="shortcut icon" href="https://vancycici.github.io/fbdecode/img/ms.jpg">
     <link rel="icon" href="https://vancycici.github.io/fbdecode/img/ms.jpg">
@@ -31,7 +31,7 @@
 <div><b>Abstract:</b> This paper presents a speech BERT model designed for neural text-to-speech (TTS), to extract the embedding that represents latent prosody attributes in speech segments, where BERT stands for Bidirectional Encoder Representations from Transformers. As a pre-training model, it can learn the prosody attributes from a large scale of data, which is not confined by the training data of TTS model. In our proposed method, the embedding is extracted from the previous segment of a fixed length, and applied in combination with mel-spectrogram to the decoder of neural TTS to predict the frames in the following segment. Experimental results on Transformer TTS show that the proposed method can be used to extract fine-grained segment-level prosody information, which is complementary to current utterance-level prosody modeling in neural TTS. The objective results on our internal single speaker TTS corpus demonstrate its effectiveness at closing the gap between generated speech and recordings in terms of prosody. Furthermore, the subjective results show that our proposed method are more preferred in both in-domain and out-of-domain texts, on our internal professional single speaker, multiple speakers and the public LJ Speaker. We provide a website with audio samples for our findings.
 </div> 
 
-<br>
+<br/>
 
 
 Firstly, we will present the reconstructed speech using the BERT model (audio unseen in the model training).
@@ -88,9 +88,9 @@ Firstly, we will present the reconstructed speech using the BERT model (audio un
     </tr>
 </tbody></table>
 
-<br>
+<br/>
 Then the synthesized speech in our experiments will listed in the order of <i>internal single speaker</i> followed by the <i>LJ speaker</i>.
-<br>
+<br/>
 
 <h3>Internal single speaker</h3>
 <table><tbody><tr>
@@ -103,7 +103,7 @@ Then the synthesized speech in our experiments will listed in the order of <i>in
     <td></td>
 </tbody></table>
 
-<br>
+<br/>
 
 <table style="border:1px solid black;margin-left:auto;margin-right:auto;"><tbody><tr>
         <td colspan="3"><b>In-domain synthesized speech synthesis with WaveNet vocoder</b></td>
@@ -141,7 +141,7 @@ Then the synthesized speech in our experiments will listed in the order of <i>in
 </tr>
 </tbody></table>
 
-<br>
+<br/>
 
 <table style="border:1px solid black;margin-left:auto;margin-right:auto;"><tbody><tr>
         <td colspan="3"><b>Out-of-domain synthesized speech synthesis with WaveNet vocoder</b></td>
@@ -179,10 +179,10 @@ Then the synthesized speech in our experiments will listed in the order of <i>in
 </tr>
 </tbody></table>
 
-<br>
+<br/>
 
 <h3>LJ speaker</h3>
-<br>
+<br/>
 Note that for LJ speaker, we didn't train a WaveNet voder for it specifically. The WaveNet voder was a universal model trained on multiple speakers, thus the speech quality of the synthesized speech is not very good. But we still can feel the prosody difference between the two methods.
 <table><tbody><tr>
     <td>Recording sample:</td>
@@ -245,7 +245,7 @@ Note that for LJ speaker, we didn't train a WaveNet voder for it specifically. T
 </tr>
 </tbody></table>
 
-<br>
+<br/>
 
 
 <table style="border:1px solid black;margin-left:auto;margin-right:auto;"><tbody><tr>
